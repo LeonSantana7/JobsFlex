@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./assets/fotoHome.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif; /* Escolha uma fonte genérica ou especifique a sua preferida */
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Outros estilos para o conteúdo do site */
+  .content {
+    padding: 20px;
+    color: #fff; /* Cor do texto, ajuste conforme necessário */
+  }
+  
+  /* Estilo para títulos */
+  h1, h2, h3 {
+    color: #fff;
+  }
+  
+  /* Estilo para parágrafos */
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para links no conteúdo */
+  .content a {
+    color: #ffc107; /* Cor dos links, ajuste conforme necessário */
+    text-decoration: none;
+  }
+  
+  .content a:hover {
+    text-decoration: underline;
+  }
+  
+  
