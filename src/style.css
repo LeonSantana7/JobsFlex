@@ -109,4 +109,38 @@ body {
     text-decoration: underline;
   }
   
-  
+  /*Quadro de login*/
+
+  .login{
+    display: flexbox;
+    justify-content: center;
+    width: 600px;
+    height: 350px;
+    margin-left: 70%;
+    margin-top: 20%;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .btn-login{
+    background-color: #102C53;
+    display: flex;
+    padding: 5px 25px;
+    border: 2px solid color(#112c53);
+    border-radius: 25px;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    transition: ease .50s;
+  }
+  /* página principal*/ 
+
+  .navbar-header {
+    display: flex;
+    list-style: none;
+}
+.navbar-header > li{
+  padding: 10px;
+}
+.navbar-header > li > a{
+  text-decoration: none;
+}
