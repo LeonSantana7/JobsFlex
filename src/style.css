@@ -1,22 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Escolha uma fonte genérica ou especifique a sua preferida */
+}
+
 body {
-    margin: 0;
-    padding: 0;
+   
     background: url('./assets/fotoHome.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Arial', sans-serif; /* Escolha uma fonte genérica ou especifique a sua preferida */
+    
     line-height: 1.6;
     font-size: 16px;
     color: #333;
   }
+
+  /* estilos cabeçalho*/
+  header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: #D9D9D9;
+}
+
+#header{
+  max-width: 1100px;
+  margin: 0 20px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
   
-  /* Outros estilos para o conteúdo do site */
+}
+.navbar{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  
+}
+
+.logo{
+  margin: 10px;
+  color: #102C53;
+}
+
+.btn-header{
+  background-color: #102C53;
+  display: flex;
+  padding: 10px 25px;
+  border: 2px solid color(#112c53);
+  border-radius: 10px;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  transition: ease .50s;
+}
+.btn-header:hover{
+  color: #ffffff;
+  background-color: #102C53;
+  transform: scale(1.2);
+}
+.btn-header1{
+  background-color: #EB4552;
+  display: flex;
+  padding: 10px 20px;
+  border: 2px solid color(#EB4552);
+  border-radius: 10px;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  transition: ease .50s;
+}
+.btn-header1:hover{
+  color: #ffffff;
+  background-color: #EB4552;
+  transform: scale(1.2);
+}
+  /* Outros estilos para o conteúdo do site 
   .content {
-    padding: 20px;
-    color: #fff; /* Cor do texto, ajuste conforme necessário */
-  }
+     Cor do texto, ajuste conforme necessário */
   
+  /* 
   /* Estilo para títulos */
-  h1, h2, h3 {
+   h2, h3 {
     color: #fff;
   }
   
