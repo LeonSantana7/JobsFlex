@@ -111,8 +111,83 @@ button {
     cursor: pointer;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(118, 117, 117) ;
+}
+
+.container {
+  width: 1280px;
+  height: 832px;
+  position: relative;
+  background: rgb(118, 117, 117);
+}
+
+.box {
+  width: 500px;
+  height: 527px;
+  position: absolute;
+  border-radius: 20px;
+}
+
+#box1 {
+  left: 800px;
+  top: 234px;
+}
+
+#box2 {
+  left: 200px;
+  top: 234px;
+}
+
+.inner-box {
+  width: 500px;
+  height: 527px;
+  position: absolute;
+  border-radius: 20px;
+}
+
+#innerBox1 {
+  background: #112C53;
+}
+
+#innerBox2 {
+  width: 500px;
+  height: 500px;
+  top: 27px;
+  background: url(https://img.freepik.com/free-icon/user_318-804790.jpg);
+}
+
+#innerBox3 {
+  background: #EB4552;
+}
+
+#innerBox4 {
+  width: 500;
+  height: 500px;
+  
+  top: 27px;
+  background: url(https://img.freepik.com/free-icon/user_318-804790.jpg);
+}
+
+.title {
+  left: 450px;
+  top: 65px;
+  position: absolute;
+  color: black;
+  font-size: 80px;
+  font-family: Inter;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
 /*encerrar estilos para o chat*/
 
+/* cadastro*/
+
+ 
+/*encerrar cadastro*/
 .e8_2 { 
 	overflow:hidden;
 }
