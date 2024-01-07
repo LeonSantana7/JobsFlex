@@ -1,18 +1,39 @@
+let conversationState = 0;
+
 function sendMessage() {
     const messageInput = document.getElementById('message');
-    const message = messageInput.value.trim();
-    if (message !== '') {
-        appendMessage('Você:', message, 'sent');
+    const userMessage = messageInput.value.trim();
+    if (userMessage !== '') {
+        appendMessage('Você:', userMessage, 'sent');
         messageInput.value = '';
-        simulateReply();
+        handleUserMessage(userMessage);
     }
 }
 
-function simulateReply() {
+function handleUserMessage(userMessage) {
+    switch (conversationState) {
+        case 0:
+            simulateReply('Olá! Como posso ajudar?');
+            conversationState++;
+            break;
+        case 1:
+            simulateReply('Você pode descrever o seu problema?');
+            conversationState++;
+            break;
+        case 2:
+            simulateReply('Obrigado pela descrição do problema. Um agente de suporte irá entrar em contato!');
+            // Optionally, reset the conversation state for a new interaction
+            conversationState = 0;
+            break;
+        default:
+            break;
+    }
+}
+
+function simulateReply(reply) {
     setTimeout(function() {
-        const reply = 'Olá! Como posso ajudar?';
-        appendMessage('Usuário:', reply, 'received');
-    }, 1000); // Simula uma resposta após 1 segundo
+        appendMessage('Suporte:', reply, 'received');
+    }, 1000);
 }
 
 function appendMessage(user, message, type) {
