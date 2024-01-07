@@ -1,61 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Jobsflex</title>
+    <meta charset="UTF-8">
+    <title>Chat Simples</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="message" placeholder="Digite sua mensagem...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
 
-    <header>
-
-        <div class="container" id="navbar">
-
-            <div class="logo" width="156" height="40">
-                <h1>JobsFlex</h1>
-            </div>
-            <div class="navbar">
-                <a href="#" class="btn-header" width="156" height="52">Entrar</a>
-                <a href="#" class="btn-header1" width="156" height="52">Serviços</a>
-            </div>
-
-        </div>
-
-    </header>
-    
-    <!--Login-->
-        <div class="container">
-            <div class="login">
-                <!--Reinserir table aqui-->
-                <table>
-                    <tr>
-                        <td><img src="./assets/Logo 1.png" alt="Logo GAVIT" width="100" height="100"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="email" placeholder="E-mail"> <br> <br></td>
-                        
-                    </tr>
-                    <tr>
-                        <td><input type="password" placeholder="Senha">
-                            <p>Não consegue acessar sua conta? <a href="#">Recuperar Senha</a> </p> 
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td><input type="button" title="Fazer Login"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" class="btn-login" value="Cadastro"></td>
-                        <td><input type="button" class="btn-login" value="Login"></td> 
-                    </tr>
-                </table>
-                <!--final table -->
-            </div>
-        </div>
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
