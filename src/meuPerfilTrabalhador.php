@@ -1,3 +1,10 @@
+<?php
+// Obter os dados do usuário da URL
+$nome = isset($_GET['nome']) ? $_GET['nome'] : 'Antonio Marcos de Alcantara';
+$email = isset($_GET['email']) ? $_GET['email'] : 'antonio@example.com';
+$datanasc = isset($_GET['datanasc']) ? $_GET['datanasc'] : '01/01/1990';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -150,7 +157,7 @@
       <div class="ClienteInfo">Gostaria de que ajustassem a mesa da minha sala...</div>
       <div class="ClienteEndereco">
        <p>
-        Cliente: Moacir Ribeiro<br/>
+        Cliente: <?php echo $nome; ?><br/>
         Local: Rua x, bairro y<br/>
         Número: 755-B<br/>
         Referência: próximo ao bar do Ziraldo
@@ -161,7 +168,7 @@
       <div class="Contato">Contato</div>
 
       <div class="ProfileInfo">Marceneiro - Ajuste de mesa</div>
-      <div class="ProfileName">Antonio Marcos de Alcantara</div>
+      <div class="ProfileName"><?php echo $nome; ?></div>
 
       <img class="Rectangle34" src="./assets/Perfil_Profissional/pessoa.avif" alt="Imagem do cliente">
       
