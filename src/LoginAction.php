@@ -11,22 +11,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $pdo = $conexao->getConexao(); // Obtendo a conexão PDO
 
         // Consulta SQL para verificar as credenciais na tabela 'login'
-        $sql = "SELECT * FROM login WHERE email = :email";
+        $sql = "SELECT * FROM login WHERE email = :email AND senha = :senha";
         $stmt = $pdo->prepare($sql);
 
         // Executando a consulta com os dados fornecidos no formulário
         $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':senha', $senha);
         $stmt->execute();
 
         // Verificando se as credenciais correspondem
         $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
-        if ($resultado && password_verify($senha, $resultado['senha'])) {
+        if ($resultado) {
             // Credenciais válidas, redirecionar para página de sucesso ou realizar outras ações
             header("Location: servicos.php");
             exit();
         } else {
             // Credenciais inválidas, redirecionar para página de erro ou mensagem de login inválido
-            header("Location: index.php?erro=1");
+            header("Location: index.php");
             exit();
         }
     } catch(PDOException $e) {
@@ -38,3 +39,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
 }
 ?>
+
